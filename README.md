@@ -1,4 +1,4 @@
-##HAZEL — A Context-Aware Mixed Reality Voice Assistant
+# HAZEL — A Context-Aware Mixed Reality Voice Assistant
 
 ## MADE FOR MIXED REALITY WEARABLES LIKE META RAY BAN GLASSES AND META OCULUS
 
