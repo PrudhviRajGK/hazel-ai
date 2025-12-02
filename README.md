@@ -1,4 +1,6 @@
-# 🚀 HAZEL — A Context-Aware Mixed Reality Voice Assistant
+#HAZEL — A Context-Aware Mixed Reality Voice Assistant
+
+## MADE FOR MIXED REALITY WEARABLES LIKE META RAY BAN GLASSES AND META OCULUS
 
 HAZEL is an intelligent voice-driven mixed reality assistant capable of understanding your environment, responding conversationally, and generating realistic speech in real time. Think JARVIS inside MR — aware of surroundings, answering questions, narrating insights, guiding actions, and interacting naturally.
 
