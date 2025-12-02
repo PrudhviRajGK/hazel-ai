@@ -6,6 +6,8 @@ HAZEL is an intelligent voice-driven mixed reality assistant capable of understa
 
 ---
 
+DEMO : https://www.youtube.com/watch?v=9lhN7GUey_o
+
 ## ✨ Core Features
 
 ### 🔹 Spatial Understanding
