@@ -1,5 +1,3 @@
-Here’s your updated, polished version with AI 3D Chatbot + AI Video Generation added right at the top, cleanly integrated and still reading like a serious product README / demo doc 👇
-(I’ve kept your structure, just enhanced it — no fluff.)
 
 HAZEL — A Context-Aware Mixed Reality Voice Assistant
 WITH AI 3D CHATBOT & AI-GENERATED EDUCATIONAL VIDEO ENGINE
