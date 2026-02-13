@@ -1,179 +1,280 @@
-# HAZEL — A Context-Aware Mixed Reality Voice Assistant
+Here’s your updated, polished version with AI 3D Chatbot + AI Video Generation added right at the top, cleanly integrated and still reading like a serious product README / demo doc 👇
+(I’ve kept your structure, just enhanced it — no fluff.)
 
-## MADE FOR MIXED REALITY WEARABLES LIKE META RAY BAN GLASSES AND META OCULUS
+HAZEL — A Context-Aware Mixed Reality Voice Assistant
+WITH AI 3D CHATBOT & AI-GENERATED EDUCATIONAL VIDEO ENGINE
+MADE FOR MIXED REALITY WEARABLES LIKE META RAY-BAN GLASSES AND META QUEST / OCULUS
 
-HAZEL is an intelligent voice-driven mixed reality assistant capable of understanding your environment, responding conversationally, and generating realistic speech in real time. Think JARVIS inside MR — aware of surroundings, answering questions, narrating insights, guiding actions, and interacting naturally.
+HAZEL is an intelligent, context-aware Mixed Reality assistant that exists as a 3D AI avatar inside your physical space. It understands your surroundings, responds conversationally using voice, generates interactive 3D content, and creates personalized AI-generated educational videos in real time.
 
----
+Think JARVIS inside Mixed Reality — aware of your environment, embodied as a 3D chatbot, answering questions, narrating insights, generating visuals, and guiding actions naturally.
 
-DEMO : https://www.youtube.com/watch?v=9lhN7GUey_o
+🎥 DEMO
 
-## ✨ Core Features
+https://www.youtube.com/watch?v=9lhN7GUey_o
 
-### 🔹 Spatial Understanding
-- Continuously scans and interprets the user's environment
-- Recognizes surfaces, objects, markers, or scene elements
-- Users can ask questions about visible surroundings
-- Extensible into overlay guidance and contextual MR workflows
+✨ Core Capabilities (High Level)
 
-### 🔹 Push-to-Talk Conversational Interaction
-- A simple button press activates voice listening
-- Speak naturally after activation
-- Responds intelligently using scene awareness + general reasoning
-- Maintains dialogue flow across follow-up questions
+AI 3D Chatbot Avatar inside Mixed Reality
 
-### 🔹 Real-Time Voice Output with Murf Falcon TTS
-- Produces natural-sounding responses immediately using **Murf Falcon TTS**
-- High-quality, human-like voice synthesis
-- Enables smooth, immersive, human-like communication
-- Customizable voice parameters (pitch, speed, speaker selection)
+Context-aware voice assistant with spatial understanding
 
-### 🔹 Hands-Free Playback
-- Once activated via button, interaction is spoken end-to-end
-- No typing or UI navigation required
-- Ideal for accessibility, spatial guidance, and task automation
+Real-time environment-aware reasoning (Vision + Language)
 
-### 🔹 Secure API Usage
-- API keys handled through environment variables
-- Clean separation between codebase and credentials
-- No hardcoded secrets in repository
+AI-generated 3D objects from sketches / ideas
 
----
+On-demand AI-generated educational videos with narration
 
-## 🧠 Architecture Overview
+Natural, real-time voice interaction
 
-```
-Environment Scanner  →  Scene Context Engine  
-        ↓                          ↓
-Push-to-Talk Input → Speech Recognition → AI Reasoning → Voice Synthesis (Murf Falcon TTS) → Audio Output
-```
+✨ Core Features
+🔹 AI 3D Chatbot Avatar (Mixed Reality)
 
-**Scene perception + spoken query = grounded, contextual intelligent answers.**
+HAZEL appears as a 3D embodied assistant in the MR environment
 
----
+Maintains eye-level spatial presence and conversational continuity
 
-## 🔍 Vision + Voice Reasoning Pipeline
+Responds with synchronized voice and spatial awareness
 
-### 🧠 OpenAI Vision Model Integration
+Enhances engagement, trust, and immersion compared to flat voice assistants
 
-**Purpose:** Query a multi-modal LLM (Vision + Language) for contextual reasoning of the current scene.
+🔹 Spatial Understanding
 
-#### How It Works:
+Continuously scans and interprets the user's environment
 
-**1. Speech Input → Command String**
-- User triggers input via push-to-talk
-- Microphone audio is captured and sent to OpenAI Speech-to-Text (ASR)
-- The resulting text becomes the query instruction for the vision model
+Recognizes surfaces, objects, markers, or scene elements
 
-**2. Scene Capture → Screenshot Feed**
-- A camera feed (Unity render texture / mixed reality viewport capture) is captured
-- The frame is serialized and attached as a binary payload to the vision request
+Users can ask questions about what they are seeing around them
 
-**3. Multi-Modal LLM Request**
-- The system sends a combined payload:
-  - Command text (intent/question)
-  - Scene image (snapshot)
-  - Optional additional prompting context
-- Supported request modes:
-  - Text-only
-  - Image-only
-  - Image + Command Text hybrid reasoning
+Extensible into spatial overlays, step-by-step MR guidance, and contextual workflows
 
-**4. Inference (Vision Model Reasoning)**
-- The model returns structured natural-language output containing:
-  - Object recognition
-  - Affordance suggestions
-  - Spatial descriptions
-  - Task answers
-  - Conversational reasoning
-- End-to-end round-trip typically runs 2–6 seconds, depending on network conditions
+🔹 Push-to-Talk Conversational Interaction
 
-**5. Speech Output (Murf Falcon TTS Synthesis)**
-- The returned text is routed to **Murf Falcon TTS** for voice generation
-- High-quality, natural-sounding speech synthesis
-- The result is streamed into Unity's audio playback system
-- The user hears the answer spoken aloud
+Simple button press activates listening
 
----
+Speak naturally after activation
 
-## ⚙️ Configurable Parameters
+Maintains conversational context across follow-ups
 
-The system supports runtime adjustments for:
+Prevents accidental triggers while enabling fast interaction
 
-- **Speaker voice selection** (via Murf Falcon TTS)
-- **Speech pitch and playback speed**
-- **Model selection** (different OpenAI vision/language model variants)
-- **Prompt modifiers:**
-  - Task framing
-  - System instructions
-  - Domain-specific guidance
+🔹 Real-Time Voice Output (Murf Falcon TTS)
 
-Developers can dynamically modify the model's behavior by changing prompt templates and image pairing strategies.
+Produces natural, human-like speech in real time
 
----
+High-quality Murf Falcon TTS voice synthesis
 
-## 📌 Technology Stack
+Supports pitch, speed, and speaker customization
 
-- ✔ **Unity** — Mixed reality application platform
-- ✔ **Spatial mapping and perception components**
-- ✔ **Push-to-talk speech recognition**
-- ✔ **OpenAI Vision API** — Multi-modal AI reasoning
-- ✔ **OpenAI Speech-to-Text (Whisper)** — Voice input processing
-- ✔ **Murf Falcon TTS** — Natural voice synthesis
-- ✔ **Dialogue and perception intelligence system**
+Ensures immersive, non-robotic communication
 
----
+🔹 Hands-Free End-to-End Interaction
 
-## 🌍 Possible Applications
+Entire interaction is voice-driven after activation
 
-HAZEL can evolve into:
+No typing, menus, or UI navigation
 
-- ✔ Mixed Reality assistant
-- ✔ Guided exploration companion
-- ✔ Smart classroom/tutorial agent
-- ✔ Interactive environment narrator
-- ✔ Voice-based productivity tool
-- ✔ Accessibility support and narration aid
+Ideal for MR wearables, accessibility, learning, and guidance
 
----
+🔹 AI-Powered 2D → 3D Content Generation
 
-## 🎯 Why Mixed Reality + Push-to-Talk Voice?
+User sketches, drawings, or concept inputs are converted into interactive 3D models
 
-- **Voice enables natural communication**
-- **Button triggering ensures intentional interaction**
-- **MR context increases relevance of answers**
-- **Makes digital assistance physically present in your space**
+Generated 3D objects can be:
 
----
+Rotated
 
-## 📢 Inspiration
+Scaled
 
-A step toward **JARVIS-like ambient intelligence** — an assistant that listens when called, understands space, and responds meaningfully.
+Examined spatially
 
----
+Transforms imagination into tangible learning artifacts
 
-## 🚀 Getting Started
+🔹 AI-Generated Educational Videos (On Demand)
 
-### Prerequisites
-- Unity 2021.3 or later
-- OpenAI API key
-- Murf Falcon TTS API access
-- Mixed Reality headset (Quest, HoloLens, etc.)
+Instantly generates personalized educational videos based on:
 
-### Setup
-1. Clone the repository
-2. Configure environment variables for API keys:
-   ```bash
-   OPENAI_API_KEY=your_openai_key
-   MURF_API_KEY=your_murf_key
-   ```
-3. Open project in Unity
-4. Deploy to your MR device
-5. Press the push-to-talk button and start conversing!
----
+User questions
+
+Current learning topic
+
+Scene context
+
+Includes:
+
+AI-generated script
+
+Voice narration
+
+Visual sequencing
+
+Created in minutes at a fraction of traditional production cost
+
+🔹 Secure API Usage
+
+API keys managed via environment variables
+
+No hardcoded credentials
+
+Clean separation of secrets and codebase
+
+🧠 Architecture Overview
+Environment Scanner → Scene Context Engine
+        ↓
+Push-to-Talk → Speech-to-Text → Vision + Language Reasoning
+        ↓
+AI Response → (3D Chatbot + Voice Output)
+        ↓
+Optional Pipelines:
+  → AI 3D Object Generation
+  → AI Educational Video Generation
 
 
+Scene perception + voice + spatial AI = grounded, intelligent responses.
 
----
+🔍 Vision + Voice Reasoning Pipeline
+🧠 OpenAI Multi-Modal Model Integration
 
-**Built with ❤️ for the future of spatial computing*
+Purpose:
+Enable contextual reasoning using vision + language + voice.
+
+How It Works:
+
+1. Voice Input
+
+Push-to-talk captures microphone audio
+
+Audio sent to OpenAI Speech-to-Text (Whisper)
+
+Transcribed text becomes the reasoning prompt
+
+2. Scene Capture
+
+Unity MR camera frame or render texture captured
+
+Scene image serialized and attached to request
+
+3. Multi-Modal LLM Request
+
+Payload includes:
+
+Command text
+
+Scene image
+
+System + task prompt
+
+Supports:
+
+Text-only reasoning
+
+Image-only reasoning
+
+Hybrid image + text reasoning
+
+4. AI Inference
+
+Model outputs:
+
+Object recognition
+
+Spatial descriptions
+
+Concept explanations
+
+Task guidance
+
+Typical latency: 2–6 seconds
+
+5. Voice Synthesis
+
+Output routed to Murf Falcon TTS
+
+Generated speech streamed into Unity audio system
+
+User hears contextual response instantly
+
+⚙️ Configurable Parameters
+
+3D chatbot behavior & tone
+
+Voice selection, pitch, speed
+
+Model selection (vision / language variants)
+
+Prompt templates & domain specialization
+
+Video generation depth and narration style
+
+📌 Technology Stack
+
+Unity (Mixed Reality application layer)
+
+Spatial Mapping & Perception Systems
+
+OpenAI Vision + Language Models
+
+OpenAI Speech-to-Text (Whisper)
+
+Murf Falcon TTS
+
+AI 2D-to-3D Generation Pipelines
+
+AI Educational Video Generation Pipeline
+
+🌍 Possible Applications
+
+Mixed Reality AI assistant
+
+AI-powered smart classroom companion
+
+Interactive learning & tutoring agent
+
+Environment-aware narrator
+
+Hands-free productivity assistant
+
+Accessibility and assistive technology
+
+🎯 Why Mixed Reality + 3D AI + Voice?
+
+Voice is the most natural interface
+
+3D embodiment increases trust and engagement
+
+Spatial context improves relevance
+
+Learning becomes immersive, not passive
+
+📢 Inspiration
+
+A step toward JARVIS-like ambient intelligence —
+an assistant that listens when called, understands space, exists physically as a 3D presence, and responds meaningfully.
+
+🚀 Getting Started
+Prerequisites
+
+Unity 2021.3 or later
+
+OpenAI API key
+
+Murf Falcon TTS API access
+
+Mixed Reality headset (Quest, HoloLens, Ray-Ban Meta, etc.)
+
+Setup
+OPENAI_API_KEY=your_openai_key
+MURF_API_KEY=your_murf_key
+
+
+Clone repository
+
+Configure environment variables
+
+Open in Unity
+
+Deploy to MR device
+
+Press push-to-talk and start interacting
+
+Built with ❤️ for the future of spatial computing
