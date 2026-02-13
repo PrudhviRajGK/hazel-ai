@@ -9,9 +9,7 @@ HAZEL is an intelligent, context-aware Mixed Reality assistant that exists as a 
 
 Think JARVIS inside Mixed Reality — aware of your environment, embodied as a 3D chatbot, answering questions, narrating insights, generating visuals, and guiding actions naturally.
 
-🎥 DEMO
 
-https://www.youtube.com/watch?v=9lhN7GUey_o
 
 ✨ Core Capabilities (High Level)
 
